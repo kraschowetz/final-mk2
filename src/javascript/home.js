@@ -1,5 +1,6 @@
 import '../css/style.css';
 import React, { useState, useEffect } from 'react';
+import { IoFlowerSharp } from "react-icons/io5";
 import * as exp from './exports.js';
 
 function Home() {
@@ -29,11 +30,12 @@ function Home() {
     <div className='container'>
       <header className={vsbl}>
         <h1>
-          SITE PHODA
+          SITE INVRIVEL
         </h1>
+        <IoFlowerSharp color='white' size={50} className='header-icon'/>
       </header>
 
-      <img src='img/flower-boy.png' alt='cover' id='img-frame'/>
+      <img src='img/flower-boy.png' alt='cover' className='img-frame'/>
 
       <div id='intro-div'>
         <exp.Title color='white'>QUEM SOU EU?</exp.Title>
@@ -78,6 +80,18 @@ function Home() {
             coziu me maeerf quê <br/>
             coziu me maeerf quêê iê <br/>
             </exp.Text>
+        </exp.TextBox>
+      </div>
+
+      <img src='img/scaring-the-hoes.png' alt='sth' className='img-frame'/>
+
+      <div className='white-div'>
+        <exp.Title color='black'>MÚSICA</exp.Title>
+        <exp.TextBox bg='#00040D' width='50%'>
+          <div className='line'>
+            <img src='img/igor.jpg' alt='igor'/>
+            <exp.Text color='white'>IGOR</exp.Text>
+          </div>  
         </exp.TextBox>
       </div>
     </div>

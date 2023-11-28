@@ -26,6 +26,7 @@ export const Text = styled.p`
     font-family:'verdana', sans-serif;
     line-height: 30px;
     font-size: 20px;
+    margin: 20px;
     text-align: center;
   `;
 
