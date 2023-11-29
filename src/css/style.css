@@ -39,13 +39,50 @@ header h1{
     margin: 8px;
 }
 
-.header-icon{
+.menu-logo{
     flex: 1;
+}
+
+button{
+    flex: 1;
+    background-color: transparent;
+    border: none;
 }
 
 .img-frame{
     width: 100%;
     height: 50%;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown{
+    flex:1;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: #00040D;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 30vh;
+    width: 20vw;
+    margin-left: 80vw;
+    height: 20vh;
+    padding: 10px;
+    transition: .5s;
+}
+
+h2{
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 #intro-div{

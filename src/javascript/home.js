@@ -2,12 +2,18 @@ import '../css/style.css';
 import React, { useState, useEffect } from 'react';
 import { IoFlowerSharp } from "react-icons/io5";
 import * as exp from './exports.js';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
   const [position, setPosition] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
+  const [menuState, setMenuState] = useState(false);
   const vsbl = visible? 'header-visible': 'header-hidden';
+
+  const changeMenu = () => {
+    setMenuState(!menuState);
+  }
 
   useEffect(() =>{
 
@@ -15,16 +21,15 @@ function Home() {
       let moving = window.scrollY;
 
       setVisible(position > moving);
-      setPosition(moving)
+      setPosition(moving);
     }
-   window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll);
     return(() => {
       window.addEventListener('scroll', handleScroll);
     })
     
-  });
-
-  
+  }); 
 
   return (
     <div className='container'>
@@ -32,7 +37,21 @@ function Home() {
         <h1>
           SITE INVRIVEL
         </h1>
-        <IoFlowerSharp color='white' size={50} className='header-icon'/>
+
+        <div className='menu' onClick={changeMenu}>
+
+          <button>
+            <IoFlowerSharp color='white' size={50} className='menu-logo'/>
+          </button>
+        </div>
+        {menuState && (vsbl === 'header-visible')? (
+          <div className='dropdown'>
+            <h2>ARTES</h2>
+            <h2>JOGOS</h2>
+            <h2>ESCOLA</h2>
+          </div>
+
+        ) : null}
       </header>
 
       <img src='img/flower-boy.png' alt='cover' className='img-frame'/>
