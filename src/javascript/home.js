@@ -2,7 +2,6 @@ import '../css/style.css';
 import React, { useState, useEffect } from 'react';
 import { IoFlowerSharp } from "react-icons/io5";
 import * as exp from './exports.js';
-import { Link } from 'react-router-dom';
 
 function Home() {
 
