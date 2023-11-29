@@ -1,6 +1,9 @@
 import '../css/style.css';
 import React, { useState, useEffect } from 'react';
 import { IoFlowerSharp } from "react-icons/io5";
+import {Link} from 'react-router-dom';
+import { FaCode, FaPaintbrush  } from "react-icons/fa6";
+import { IoMdSchool } from "react-icons/io";
 import * as exp from './exports.js';
 
 function Home() {
@@ -45,9 +48,17 @@ function Home() {
         </div>
         {menuState && (vsbl === 'header-visible')? (
           <div className='dropdown'>
-            <h2>ARTES</h2>
-            <h2>JOGOS</h2>
-            <h2>ESCOLA</h2>
+            <Link to='/arte'>
+              <FaPaintbrush size={50} className='menu-item'/>
+            </Link>
+
+            <Link to='/programacao'>
+              <FaCode size={50} className='menu-item'/>
+            </Link>
+
+            <Link to='/escola'>
+              <IoMdSchool size={50} className='menu-item'/>
+            </Link>
           </div>
 
         ) : null}

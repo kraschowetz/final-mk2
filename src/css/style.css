@@ -41,6 +41,7 @@ header h1{
 
 .menu-logo{
     flex: 1;
+    cursor: pointer;
 }
 
 button{
@@ -69,16 +70,15 @@ button{
     align-items: center;
     border-radius: 16px;
     margin-top: 30vh;
-    width: 20vw;
-    margin-left: 80vw;
+    width: 4vw;
+    margin-left: 91.25vw;
     height: 20vh;
-    padding: 10px;
+    padding: 20px;
     transition: .5s;
 }
 
-h2{
+.menu-item{
     margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 30px;
     color: white;
