@@ -47,3 +47,8 @@ export const Title = styled.h1`
         animation-iteration-count: infinite;
     }
   `;
+
+export const HeaderLine = styled.div`
+    display: flex;
+    width: 100vw;
+`;

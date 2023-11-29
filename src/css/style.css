@@ -10,6 +10,15 @@ body {
     height: fit-content;
 }
 
+#header-fixer{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 20vh;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -24,6 +33,7 @@ header{
 .header-visible {
     top: 0;
     transition: top 0.4s ease-out;
+    background-color: #00040D;
 }
 
 .header-hidden {
@@ -62,17 +72,18 @@ button{
 }
 
 .dropdown{
-    flex:1;
-    position: inherit;
+    position: fixed;
+    flex: 1;
+    top: 0;
     display: flex;
     flex-direction: column;
     background-color: #00040D;
     align-items: center;
     border-radius: 16px;
-    margin-top: 30vh;
+    margin-top: 10vh;
     width: 4vw;
     margin-left: 91.25vw;
-    height: 20vh;
+    min-height: fit-content;
     padding: 20px;
     transition: .5s;
 }
