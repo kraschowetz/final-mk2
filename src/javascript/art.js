@@ -4,7 +4,7 @@ import { IoFlowerSharp } from "react-icons/io5";
 import {Link} from 'react-router-dom';
 import { FaCode, FaPaintbrush  } from "react-icons/fa6";
 import { IoMdSchool } from "react-icons/io";
-import * as exp from './exports.js';
+//import * as exp from './exports.js';
 
 
 function Art(){
