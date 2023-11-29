@@ -2,7 +2,7 @@ body {
     background-color: #f1f1f1;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,16 @@ body {
     height: fit-content;
 }
 
-header{
+#header-fixer {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 20vh;
+}
+
+header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,6 +33,7 @@ header{
 .header-visible {
     top: 0;
     transition: top 0.4s ease-out;
+    background-color: #00040D;
 }
 
 .header-hidden {
@@ -31,53 +41,54 @@ header{
     transition: top 0.4s ease-out;
 }
 
-header h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     user-select: none;
     color: white;
     flex: 9;
     margin: 8px;
 }
 
-.menu-logo{
+.menu-logo {
     flex: 1;
     cursor: pointer;
 }
 
-button{
+button {
     flex: 1;
     background-color: transparent;
     border: none;
 }
 
-.img-frame{
+.img-frame {
     width: 100%;
     height: 50%;
 }
 
-.menu{
+.menu {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.dropdown{
-    flex:1;
-    position: inherit;
+.dropdown {
+    position: fixed;
+    flex: 1;
+    top: 0;
     display: flex;
     flex-direction: column;
     background-color: #00040D;
     align-items: center;
     border-radius: 16px;
-    margin-top: 30vh;
+    margin-top: 10vh;
     width: 4vw;
     margin-left: 91.25vw;
-    height: 20vh;
+    min-height: fit-content;
     padding: 20px;
     transition: .5s;
 }
 
-.menu-item{
+.menu-item {
     margin: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -85,7 +96,7 @@ button{
     cursor: pointer;
 }
 
-#intro-div{
+#intro-div {
     display: flex;
     flex-direction: column;
     background-color: #00040D;
@@ -95,7 +106,7 @@ button{
     align-items: center;
 }
 
-h1{
+h1 {
     margin: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -104,7 +115,7 @@ h1{
     user-select: none;
 }
 
-.line{
+.line {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -114,7 +125,7 @@ h1{
     height: fit-content;
 }
 
-.white-div{
+.white-div {
     width: 100%;
     min-height: 150px;
     height: fit-content;

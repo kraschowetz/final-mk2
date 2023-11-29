@@ -35,18 +35,20 @@ function Home() {
 
   return (
     <div className='container'>
-      <header className={vsbl}>
-        <h1>
-          SITE INVRIVEL
-        </h1>
+      <div id='header-fixer'>
+        <header className={vsbl}>
+          <h1>
+            SITE INVRIVEL
+          </h1>
 
-        <div className='menu' onClick={changeMenu}>
+          <div className='menu' onClick={changeMenu}>
+            <button>
+              <IoFlowerSharp color='white' size={50} className='menu-logo'/>
+            </button>
+          </div>
+        </header>
 
-          <button>
-            <IoFlowerSharp color='white' size={50} className='menu-logo'/>
-          </button>
-        </div>
-        {menuState && (vsbl === 'header-visible')? (
+      {menuState && (vsbl === 'header-visible')? (
           <div className='dropdown'>
             <Link to='/arte'>
               <FaPaintbrush size={50} className='menu-item'/>
@@ -61,9 +63,8 @@ function Home() {
             </Link>
           </div>
 
-        ) : null}
-      </header>
-
+      ) : null} 
+      </div>
       <img src='img/flower-boy.png' alt='cover' className='img-frame'/>
 
       <div id='intro-div'>
