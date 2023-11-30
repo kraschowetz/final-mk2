@@ -10,6 +10,15 @@ body {
     height: fit-content;
 }
 
+#header-fixer{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 20vh;
+}
+
 #header-fixer {
     width: 100vw;
     position: fixed;
@@ -71,10 +80,9 @@ button {
     flex-direction: column;
 }
 
-.dropdown {
-    position: fixed;
-    flex: 1;
-    top: 0;
+.dropdown{
+    flex:1;
+    position: inherit;
     display: flex;
     flex-direction: column;
     background-color: #00040D;
