@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoFlowerSharp } from "react-icons/io5";
 import { FaCode, FaPaintbrush } from "react-icons/fa6";
-import { IoMdSchool } from "react-icons/io";
 import { RiHome2Fill } from "react-icons/ri";
 
 export default function School(){
