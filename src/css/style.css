@@ -10,13 +10,9 @@ body {
     height: fit-content;
 }
 
-#header-fixer {
+#header-spacing {
     width: 100vw;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    height: 20vh;
+    height: 10vw;
 }
 
 #header-line{
@@ -83,22 +79,23 @@ button {
     flex-direction: column;
 }
 
-#menu-void {
+#menu-void{
     flex: 9;
     width: 100%;
     height: 100%;
 }
 
-.dropdown {
-    flex: 1;
-    display: flex;
+.dropdown{
+    flex:1;
     position: inherit;
+    display: flex;
     flex-direction: column;
     background-color: #00040D;
     align-items: center;
     border-radius: 16px;
+    margin-top: 10vh;
     width: 4vw;
-    margin-right: 1vw;
+    margin-left: 91.25vw;
     min-height: fit-content;
     padding: 20px;
 }
