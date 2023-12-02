@@ -24,6 +24,9 @@ function Home() {
 
       setVisible(position > moving);
       setPosition(moving);
+
+      if(!visible)
+        setMenuState(false);
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -48,22 +51,27 @@ function Home() {
           </div>
         </header>
 
-      {menuState && (vsbl === 'header-visible')? (
-          <div className='dropdown'>
-            <Link to='/arte'>
-              <FaPaintbrush size={50} className='menu-item'/>
-            </Link>
+        <div id='header-line'>
 
-            <Link to='/programacao'>
-              <FaCode size={50} className='menu-item'/>
-            </Link>
+          <div id='menu-void'/>
 
-            <Link to='/escola'>
-              <IoMdSchool size={50} className='menu-item'/>
-            </Link>
-          </div>
+            {menuState && visible? (
+              <div className='dropdown'>
+                <Link to='/arte'>
+                  <FaPaintbrush size={50} className='menu-item'/>
+                </Link>
 
-      ) : null} 
+                <Link to='/programacao'>
+                  <FaCode size={50} className='menu-item'/>
+                </Link>
+
+                <Link to='/escola'>
+                  <IoMdSchool size={50} className='menu-item'/>
+                </Link>
+              </div>
+            ): null}
+            
+        </div>
       </div>
       <img src='img/flower-boy.png' alt='cover' className='img-frame'/>
 

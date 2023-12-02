@@ -2,11 +2,10 @@ import '../css/style.css';
 import React, { useState, useEffect } from 'react';
 import { IoFlowerSharp } from "react-icons/io5";
 import {Link} from 'react-router-dom';
-import { FaCode, FaPaintbrush  } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
 import { IoMdSchool } from "react-icons/io";
 import { RiHome2Fill } from "react-icons/ri";
 import * as exp from './exports.js';
-
 
 function Art(){
 
@@ -74,17 +73,12 @@ function Art(){
 
                 <exp.TextBox bg="#f1f1f1" width="50%">
                     <exp.Text>
-                        <b>COMO Q É?</b><br/>
-                        Taller de concreto.<br/>
-                        Cachorro.<br/>
-                        Aingobórigô.<br/>
-                        Engobórirô.<br/>
-                        Bidofómarô.<br/>
-                        Bidosémiô.<br/>
-                        Bidosémiô.<br/>
-                        Gôretaliô.<br/>
-                        Donlíííí.<br/>
-                        Ismafóó (mafó)<br/>
+                        <b>PRA QUE DESENHAR?</b><br/>
+                        pq é mt é massa 👍 <br/>
+                        <b>PRA QUE PINTAR?</b><br/>
+                        pq é mt é massa 👍 <br/>
+                        <b>PRA QUE TAOVINOMUSGA?</b><br/>
+                        pq é mt é massa 👍 <br/>
                     </exp.Text>
                 </exp.TextBox>
             </div>                              
