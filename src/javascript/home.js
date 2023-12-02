@@ -18,6 +18,7 @@ function Home() {
   }
 
   useEffect(() =>{
+    document.title = 'site final';
 
     const handleScroll = () => {
       let moving = window.scrollY;
@@ -129,16 +130,6 @@ function Home() {
       </div>
 
       <img src='img/scaring-the-hoes.png' alt='sth' className='img-frame'/>
-
-      <div className='white-div'>
-        <exp.Title color='black'>MÚSICA</exp.Title>
-        <exp.TextBox bg='#00040D' width='50%'>
-          <div className='line'>
-            <img src='img/igor.jpg' alt='igor'/>
-            <exp.Text color='white'>IGOR</exp.Text>
-          </div>  
-        </exp.TextBox>
-      </div>
     </div>
   );
 }

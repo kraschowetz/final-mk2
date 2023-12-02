@@ -4,7 +4,10 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './javascript/home';
 import Redirect from './javascript/redirect';
+import Err from './javascript/err';
 import Art from './javascript/art';
+import School from './javascript/school/school';
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: '/programacao',
     element: <Home/>
+  },
+  {
+    path: '/escola',
+    element: <School/>
+  },
+  {
+    path: '*',
+    element: <Err/>
   }
 ]);
 
