@@ -25,6 +25,9 @@ function Art(){
 
       setVisible(position > moving);
       setPosition(moving);
+
+      if(!visible)
+        setMenuState(false);
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -38,17 +41,21 @@ function Art(){
             <div id='header-fixer'>
                 <header className={vsbl}>
                     <h1>
-                        ARTE
+                        SITE INVRIVEL
                     </h1>
 
                     <div className='menu' onClick={changeMenu}>
                         <button>
-                        <IoFlowerSharp color='white' size={50} className='menu-logo'/>
+                            <IoFlowerSharp color='white' size={50} className='menu-logo'/>
                         </button>
                     </div>
                 </header>
 
-                {menuState && (vsbl === 'header-visible')? (
+                <div id='header-line'>
+
+                    <div id='menu-void'/>
+
+                    {menuState && visible? (
                     <div className='dropdown'>
                         <Link to='/home'>
                         <RiHome2Fill size={50} className='menu-item'/>
@@ -62,9 +69,10 @@ function Art(){
                         <IoMdSchool size={50} className='menu-item'/>
                         </Link>
                     </div>
-                                                                
-                ) : null}                                      
-            </div>   {/*FIM DO CABEÇALHO*/}    
+                    ): null}
+            
+                </div>
+            </div> {/*fim do cabeçalho*/}
 
             <img src='img/madvillainy.png' alt='cover' className='img-frame'/>  
 

@@ -99,6 +99,14 @@ function Home() {
           </exp.TextBox>
 
           <exp.TextBox bg="#f1f1f1" width="20%">
+            <exp.Text><b>SOFT SKILLS:</b><br/>
+             -trabalho em equipe<br/>
+             -trabalhar dentro do prazo<br/>
+             -tolerância<br/>
+            </exp.Text>
+          </exp.TextBox>
+
+          <exp.TextBox bg="#f1f1f1" width="20%">
             <exp.Text><b>ARTE:</b><br/>
              -nanquim<br/>
              -aquarela<br/>
@@ -107,17 +115,16 @@ function Home() {
              -vídeos<br/>
             </exp.Text>
           </exp.TextBox>
+
         </div>
       </div>
 
       <div className='white-div'>
-        <exp.Title color='black'>taller de concreto</exp.Title>
+        <exp.Title color='black'>SOBRE MIM</exp.Title>
         <exp.TextBox bg='#00040D' width='80%'>
           <exp.Text color='white'>
-            foriu, foiru, fouriudistaim <br/>
-            coziu me maeerf quê <br/>
-            coziu me maeerf quêê iê <br/>
-            </exp.Text>
+              Dont oliver
+          </exp.Text>
         </exp.TextBox>
       </div>
 
