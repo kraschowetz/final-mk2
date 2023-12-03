@@ -7,6 +7,7 @@ import Redirect from './javascript/redirect';
 import Err from './javascript/err';
 import Art from './javascript/art';
 import School from './javascript/school/school';
+import Science from './javascript/school/science';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/escola',
     element: <School/>
+  },
+  {
+    path: '/ciencias',
+    element: <Science/>
   },
   {
     path: '*',
