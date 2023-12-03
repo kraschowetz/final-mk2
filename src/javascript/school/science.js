@@ -7,6 +7,8 @@ import { RiHome2Fill } from "react-icons/ri";
 import * as exp from '../exports.js';
 
 export default function Science(){
+    
+
     const [position, setPosition] = useState(window.scrollY);
     const [visible, setVisible] = useState(true);
     const [menuState, setMenuState] = useState(false);
@@ -35,6 +37,8 @@ export default function Science(){
         })
     
     }); 
+
+    useEffect(() =>{window.scrollTo(0, 0)}, []);
 
     return(
         <div className='container'>

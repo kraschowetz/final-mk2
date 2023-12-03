@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom';
 import Home from './javascript/home';
 import Redirect from './javascript/redirect';
 import Err from './javascript/err';
