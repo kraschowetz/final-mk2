@@ -1,5 +1,4 @@
 import '../../css/style.css';
-import '../../css/school.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoFlowerSharp } from "react-icons/io5";
@@ -7,7 +6,8 @@ import { FaCode, FaPaintbrush } from "react-icons/fa6";
 import { RiHome2Fill } from "react-icons/ri";
 import * as exp from '../exports.js';
 
-export default function School(){
+export default function Science(){
+    
 
     const [position, setPosition] = useState(window.scrollY);
     const [visible, setVisible] = useState(true);
@@ -19,7 +19,7 @@ export default function School(){
     }
 
     useEffect(() =>{
-        document.title = 'escola';
+        document.title = 'ciências da natureza';
 
         const handleScroll = () => {
         let moving = window.scrollY;
@@ -45,7 +45,7 @@ export default function School(){
             <div id='header-fixer'>
                 <header className={vsbl}>
                     <h1>
-                        TRABALHOS DA ESCOLA
+                        CIÊNCIAS HUMANAS
                     </h1>
 
                     <div className='menu' onClick={changeMenu}>
@@ -80,56 +80,49 @@ export default function School(){
                 </div>
             </div> {/*fim do cabeçalho*/}
 
-            <img src='img/graduation.jpg' alt='escola' className='img-frame'/>
+            <img src='img/humanas.jpg' alt='capivara' className='img-frame'/>
 
-            <div id='blk-grid'>
-                <exp.Title>MATÉRIAS</exp.Title>
-                <div className='grid'>
+            <div id='intro-div'>
+                <exp.Title color='white'>
+                    MAGRELA
+                </exp.Title>
 
-                    <Link to='/ciencias'>
-                        <div className='box'>
-                            <RiHome2Fill size={100} className='grid-item'/>
-                            <h2>ciências</h2>
-                        </div>
-                    </Link>
+                <exp.TextBox bg='#f1f1f1' width='60%'>
+                    <exp.Text color='black'>
+                       esse foi um vídeo feito no ano passado. acho q é o meu melhor trabalho de 
+                        humans pois foi o único que fez 3 pessoas acharem que estava desmaiando durante
+                        sua gravação.
+                    </exp.Text>
 
-                    <Link to='/humanas'>
-                        <div className='box'>
-                            <RiHome2Fill size={100} className='grid-item'/>
-                            <h2>humanas</h2>
-                        </div>
-                    </Link>
-                    
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>linguagens</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>matemática</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>T.I</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>automação</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>I.A</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>machine learning</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>metaverso</h2>
-                    </div>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SuRT7QFJKeA?si=Vjh4yZld9bmp9Z4F" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                    web-share" allowfullscreen></iframe>
+                </exp.TextBox>
+
+                <exp.Title color='white'>
+                    ONU     
+                </exp.Title>
+                
+                <exp.TextBox bg='#f1f1f1' width='60%'>
+                    <exp.Text color='black'>
+                        François 🇫🇷 <br/>
+                        ho hon!
+                    </exp.Text>
+                </exp.TextBox>
+
+                <exp.Title color='white'>
+                    RODA VIVA
+                </exp.Title>
+
+                <exp.TextBox bg='#f1f1f1' width='60%'>
+                    <exp.Text color='black'>
+                        converti a sala ao trotskysmo (eca)
+                    </exp.Text>
+                </exp.TextBox>
+
             </div>
+
         </div>
     );
 }

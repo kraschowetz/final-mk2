@@ -8,6 +8,7 @@ import Err from './javascript/err';
 import Art from './javascript/art';
 import School from './javascript/school/school';
 import Science from './javascript/school/science';
+import Leftists from './javascript/school/Leftists';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: '/ciencias',
     element: <Science/>
+  },
+  {
+    path: '/humanas',
+    element: <Leftists/>
   },
   {
     path: '*',
