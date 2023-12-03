@@ -1,9 +1,11 @@
 import '../../css/style.css';
+import '../../css/school.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoFlowerSharp } from "react-icons/io5";
 import { FaCode, FaPaintbrush } from "react-icons/fa6";
 import { RiHome2Fill } from "react-icons/ri";
+import * as exp from '../exports.js';
 
 export default function School(){
 
@@ -75,6 +77,54 @@ export default function School(){
             
                 </div>
             </div> {/*fim do cabeçalho*/}
+
+            <img src='img/graduation.jpg' alt='escola' width='100%'/>
+
+            <div id='blk-grid'>
+                <exp.Title>MATÉRIAS</exp.Title>
+                <div className='grid'>
+
+                    <Link to='/ciencias'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>ciências</h2>
+                        </div>
+                    </Link>
+
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>humanas</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>linguagens</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>matemática</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>T.I</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>automação</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>I.A</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>machine learning</h2>
+                    </div>
+                    <div className='box'>
+                        <RiHome2Fill size={100} className='grid-item'/>
+                        <h2>metaverso</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

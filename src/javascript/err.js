@@ -1,3 +1,4 @@
+import '../css/style.css';
 import * as exp from './exports';
 import { Link } from 'react-router-dom';
 import { RiHome2Fill } from 'react-icons/ri';

@@ -8,7 +8,6 @@ import Err from './javascript/err';
 import Art from './javascript/art';
 import School from './javascript/school/school';
 
-
 const router = createBrowserRouter([
   {
     path: '/',
