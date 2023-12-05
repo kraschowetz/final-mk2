@@ -7,7 +7,7 @@ import { FaCode, FaPaintbrush } from "react-icons/fa6";
 import { RiHome2Fill } from "react-icons/ri";
 import * as exp from '../exports.js';
 
-export default function Science(){
+export default function Math(){
     
 
     const [position, setPosition] = useState(window.scrollY);
@@ -20,7 +20,7 @@ export default function Science(){
     }
 
     useEffect(() =>{
-        document.title = 'ciências da natureza';
+        document.title = 'Matemática    ';
 
         const handleScroll = () => {
         let moving = window.scrollY;
@@ -46,7 +46,7 @@ export default function Science(){
             <div id='header-fixer'>
                 <header className={vsbl}>
                     <h1>
-                        CIÊNCIAS DA NATUREZA
+                        MATEMÁTICA
                     </h1>
 
                     <div className='menu' onClick={changeMenu}>
@@ -81,52 +81,56 @@ export default function Science(){
                 </div>
             </div> {/*fim do cabeçalho*/}
 
-            <img src='img/ciencias.jpg' alt='eu sabo' className='img-frame'/>
+            <img src='img/humanas.jpg' alt='capivara' className='img-frame'/>
 
             <div id='intro-div'>
                 <exp.Title color='white'>
-                    JOGO DA EVOLUÇÃO
+                    ESTATISTICA
                 </exp.Title>
 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
                     <exp.Text color='black'>
-                        Foi um trabalho mais elaborado: para representar a teoria da vida à base de silicio
-                        fiz um jogo que mostra o processo de criação da vida à base de silicio em um outro planeta.
+                       Foi um trabalho recente, tivemos que recolher dados e fazer uma pesquisa de estatistica sobre
+                        um tema livre. O tema escolhido foi: dupla jornada de trabalho feminina.
+                        <br/>
+                        O que mais me mercou nesse trabalho foi o fato de que ele preveu o tema da redação do ENEM.
+                        Na mesma semana que ele foi apresentado seu tema caiu na redação do ENEM.
                     </exp.Text>
 
-                    <iframe title='silicon-rush'id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
-                    mozallowfullscreen="true" src="https://play.unity.com/webgl/5a56cb8b-09da-463c-aa45-063cba5b8174?screenshot=false&embedType=embed"  width="100%"
-                    height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>
+                    <Link to='https://www.canva.com/design/DAFyvEeqoEo/xN0tdjAbHQvTYoI_rWwcSw/view'
+                    target='_blank'>
+                        <img src='img/Violencia.png' alt='livro'/>
+                    </Link>
+
                 </exp.TextBox>
 
                 <exp.Title color='white'>
-                    ESTAÇÃO DE TRATAMENTO DE ÁGUA
+                    MÓDULOS     
                 </exp.Title>
                 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
+
                     <exp.Text color='black'>
-                        A sala inteira se uniu para fazer uma estação de tratamento de água. <br/>
-                        A parte mais interessante desse trabalho foi que durante sua produção algum aluno anonimo
-                        acidentalmente (provavelmente) fez um vazamento de gás no lab. do SENAC enquanto trabalhavamos com
-                        fogo no mesmo laboratório. 
+                        Não é um trabalho específico, mas acho muito interessante ter estudado sobre módulos de numeros,
+                        tanto por que foram os poucos exercicios de matemática que me interessei em fazer e também por que
+                        descobri um uso para esse conteúdo na porgramação de jogos.
                     </exp.Text>
+
                 </exp.TextBox>
 
                 <exp.Title color='white'>
-                    HOLTER E MAPA
+                    TEODOLITO
                 </exp.Title>
 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
                     <exp.Text color='black'>
-                        Meu grupo aprimorou o dispositivo 'Holter e Mapa'.
+                        Nesse trabalho o grupo teve que construir um teodolito e usar ele para medir objetos pelo senac.
                     </exp.Text>
-                     <img src='img/insulina.png' alt='holter e mapa'/>
                 </exp.TextBox>
 
                 <Link to='/escola'>
                   <IoMdSchool size={75} className='menu-item'/>
                 </Link>
-
             </div>
 
         </div>

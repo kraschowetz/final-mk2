@@ -7,7 +7,7 @@ import { FaCode, FaPaintbrush } from "react-icons/fa6";
 import { RiHome2Fill } from "react-icons/ri";
 import * as exp from '../exports.js';
 
-export default function Science(){
+export default function IT(){
     
 
     const [position, setPosition] = useState(window.scrollY);
@@ -20,7 +20,7 @@ export default function Science(){
     }
 
     useEffect(() =>{
-        document.title = 'ciências da natureza';
+        document.title = 'Automação';
 
         const handleScroll = () => {
         let moving = window.scrollY;
@@ -46,7 +46,7 @@ export default function Science(){
             <div id='header-fixer'>
                 <header className={vsbl}>
                     <h1>
-                        CIÊNCIAS DA NATUREZA
+                        AUTOMAÇÃO
                     </h1>
 
                     <div className='menu' onClick={changeMenu}>
@@ -81,50 +81,27 @@ export default function Science(){
                 </div>
             </div> {/*fim do cabeçalho*/}
 
-            <img src='img/ciencias.jpg' alt='eu sabo' className='img-frame'/>
+            <img src='img/humanas.jpg' alt='capivara' className='img-frame'/>
 
             <div id='intro-div'>
                 <exp.Title color='white'>
-                    JOGO DA EVOLUÇÃO
+                    O QUE É AUTOMAÇÃO?
                 </exp.Title>
 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
                     <exp.Text color='black'>
-                        Foi um trabalho mais elaborado: para representar a teoria da vida à base de silicio
-                        fiz um jogo que mostra o processo de criação da vida à base de silicio em um outro planeta.
+                                               Automação em T.I é a criação de algum software que substitua a intervenção manual.
+                        <br/>
+                        Am exemplo disso é um bot feito em python que vota em uma pesquisa automaticamente.
+                        <br/>
+                        um processo de automação pode usar de inteligência artificial para melhorar seu desempenho,
+                        por exemplo, para executar uma tarefa mais rápido ou poder atuar em cenários imprevistos.
                     </exp.Text>
 
-                    <iframe title='silicon-rush'id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
-                    mozallowfullscreen="true" src="https://play.unity.com/webgl/5a56cb8b-09da-463c-aa45-063cba5b8174?screenshot=false&embedType=embed"  width="100%"
-                    height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>
-                </exp.TextBox>
-
-                <exp.Title color='white'>
-                    ESTAÇÃO DE TRATAMENTO DE ÁGUA
-                </exp.Title>
-                
-                <exp.TextBox bg='#f1f1f1' width='60%'>
-                    <exp.Text color='black'>
-                        A sala inteira se uniu para fazer uma estação de tratamento de água. <br/>
-                        A parte mais interessante desse trabalho foi que durante sua produção algum aluno anonimo
-                        acidentalmente (provavelmente) fez um vazamento de gás no lab. do SENAC enquanto trabalhavamos com
-                        fogo no mesmo laboratório. 
-                    </exp.Text>
-                </exp.TextBox>
-
-                <exp.Title color='white'>
-                    HOLTER E MAPA
-                </exp.Title>
-
-                <exp.TextBox bg='#f1f1f1' width='60%'>
-                    <exp.Text color='black'>
-                        Meu grupo aprimorou o dispositivo 'Holter e Mapa'.
-                    </exp.Text>
-                     <img src='img/insulina.png' alt='holter e mapa'/>
                 </exp.TextBox>
 
                 <Link to='/escola'>
-                  <IoMdSchool size={75} className='menu-item'/>
+                    <IoMdSchool size={75} className='menu-item'/>
                 </Link>
 
             </div>

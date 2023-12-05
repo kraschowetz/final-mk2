@@ -100,34 +100,54 @@ export default function School(){
                         </div>
                     </Link>
                     
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>linguagens</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>matemática</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>T.I</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>automação</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>I.A</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>machine learning</h2>
-                    </div>
-                    <div className='box'>
-                        <RiHome2Fill size={100} className='grid-item'/>
-                        <h2>metaverso</h2>
-                    </div>
+                    <Link to='/linguagens'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>linguagens</h2>
+                        </div>
+                    </Link>
+
+                    <Link to='/matematica'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>matemática</h2>
+                        </div>
+                    </Link>
+
+                    <Link to='/ti'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>T.I</h2>
+                        </div>
+                    </Link>
+                    
+                    <Link to='/automacao'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>automação</h2>
+                        </div>
+                    </Link>
+
+                    <Link to ='/ia'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>I.A</h2>
+                        </div>
+                    </Link>
+
+                    <Link to='/machine_learning'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>machine learning</h2>
+                        </div>
+                    </Link>
+
+                    <Link to='/ra'>
+                        <div className='box'>
+                            <RiHome2Fill size={100} className='grid-item'/>
+                            <h2>metaverso</h2>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

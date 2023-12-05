@@ -2,6 +2,7 @@ import '../../css/style.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoFlowerSharp } from "react-icons/io5";
+import { IoMdSchool } from "react-icons/io";
 import { FaCode, FaPaintbrush } from "react-icons/fa6";
 import { RiHome2Fill } from "react-icons/ri";
 import * as exp from '../exports.js';
@@ -106,8 +107,8 @@ export default function Science(){
                 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
                     <exp.Text color='black'>
-                        François 🇫🇷 <br/>
-                        ho hon!
+                        Tivemos que simular uma conferencia de direitos humanos da ONU, eu e minha dupla fomos os
+                        representantes da França, para ir à carater, fomos de boina, camisa listrada e levamos uma baguete.
                     </exp.Text>
                 </exp.TextBox>
 
@@ -117,9 +118,17 @@ export default function Science(){
 
                 <exp.TextBox bg='#f1f1f1' width='60%'>
                     <exp.Text color='black'>
-                        converti a sala ao trotskysmo (eca)
+                        Foi um trabalho onde encenariamos uma roda viva, mas com figuras importantes da revolução Russa.
+                        Cada grupo seria sorteado com uma personalidade, para minha infelicidade peguei Leon Trotsky (vulgo
+                        Paulo Kogos se fosse Comunista). <br/>
+                        Eu fui a pessoa que interpretou Trotsky, tenho que dizer, foi bem legal fazer isso simplesmente
+                        porque agir que nem um maluco é muito divertido.
                     </exp.Text>
                 </exp.TextBox>
+
+                <Link to='/escola'>
+                  <IoMdSchool size={75} className='menu-item'/>
+                </Link>
 
             </div>
 
