@@ -1,9 +1,10 @@
 import '../css/style.css';
 import React, { useState, useEffect } from 'react';
-import { IoFlowerSharp } from "react-icons/io5";
 import {Link} from 'react-router-dom';
+import { IoFlowerSharp } from "react-icons/io5";
 import { FaCode, FaPaintbrush  } from "react-icons/fa6";
-import { IoMdSchool } from "react-icons/io";
+import { IoMdSchool, IoIosMail  } from "react-icons/io";
+import { FaLastfm, FaInstagram  } from "react-icons/fa";
 import * as exp from './exports.js';
 
 function Home() {
@@ -121,17 +122,38 @@ function Home() {
 
         </div>
       </div>
+      
+      <exp.Title color='black'>MEUS PROJETOS</exp.Title>
 
-      <div className='white-div'>
-        <exp.Title color='black'>SOBRE MIM</exp.Title>
-        <exp.TextBox bg='#00040D' width='80%'>
-          <exp.Text color='white'>
-              Dont oliver
-          </exp.Text>
-        </exp.TextBox>
+      <div className='line'>
+        <Link to='/arte'>
+          <FaPaintbrush size={75} className='div-item'/>
+        </Link>
+
+        <Link to='/programacao'>
+          <FaCode size={75} className='div-item'/>
+        </Link>
+
+        <Link to='/escola'>
+          <IoMdSchool size={75} className='div-item'/>
+        </Link>
       </div>
 
-      <img src='img/scaring-the-hoes.png' alt='sth' className='img-frame'/>
+      <exp.Title color='black'>MEUS CONTATOS</exp.Title>
+
+      <div className='line'>
+        <Link to='https://www.last.fm/pt/user/kraschowetz' target='_blank'>
+          <FaLastfm size={75} className='div-item'/>
+        </Link>
+
+        <Link to='https://www.instagram.com/kraschow/' target='_blank'>
+          <FaInstagram size={75} className='div-item'/>
+        </Link>
+
+        <Link to='mailto:joao.kraschowetz@gmail.com'>
+          <IoIosMail size={75} className='div-item'/>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -81,7 +81,7 @@ export default function IT(){
                 </div>
             </div> {/*fim do cabeçalho*/}
 
-            <img src='img/humanas.jpg' alt='capivara' className='img-frame'/>
+            <img src='img/bmo.jpg' alt='capivara' className='img-frame'/>
 
             <div id='intro-div'>
                 <exp.Title color='white'>
