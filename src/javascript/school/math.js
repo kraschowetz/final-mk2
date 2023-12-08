@@ -81,7 +81,7 @@ export default function Math(){
                 </div>
             </div> {/*fim do cabeçalho*/}
 
-            <img src='img/humanas.jpg' alt='capivara' className='img-frame'/>
+            <img src='img/ciencias.jpg' alt='capivara' className='img-frame'/>
 
             <div id='intro-div'>
                 <exp.Title color='white'>

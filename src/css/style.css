@@ -164,3 +164,13 @@ h1 {
 .div-item:hover {
     transform: scale(1.5);
 }
+
+@media(max-width: 800px) {
+    header h1{
+        font-size: 25px;
+    }
+    .img-frame{
+        width: 100vw;
+        height: 50vh;
+    }
+}
